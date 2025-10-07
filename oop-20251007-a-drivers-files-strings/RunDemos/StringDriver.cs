@@ -36,10 +36,10 @@ namespace oop_20251007_a_drivers_files_strings.RunDemos
             decimal price1 = 999.99m;
             string product2 = "Smartphone";
             decimal price2 = 499.49m;
-
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.WriteLine($"{"Product",-15}{"Price",10}");
-            Console.WriteLine($"{product1,-15}{price1,10}");
-            Console.WriteLine($"{product2,-15}{price2,10}");
+            Console.WriteLine($"{product1,-15}{price1,10:C}");
+            Console.WriteLine($"{product2,-15}{price2,10:C}");
         }
 
         public static void OutputProductRepository()
